@@ -1,6 +1,6 @@
 FROM golang:alpine AS builder
 RUN apk add git
-ARG TAG=v0.1.4
+ARG TAG=v0.1.5
 RUN GO111MODULE=on go get -v github.com/miko/webgock@${TAG}
 
 FROM alpine
