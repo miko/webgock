@@ -8,3 +8,4 @@ WORKDIR /gock
 EXPOSE 8080
 COPY example /gock/example
 COPY --from=builder /go/bin/webgock /bin/webgock
+CMD ["/bin/webgock", "-addr", ":8080"]
