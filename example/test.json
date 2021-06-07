@@ -1,0 +1,28 @@
+[
+  {
+    "Request":{
+      "Host": "foo.com",
+      "Method": "GET",
+      "URL": "/test$",
+      "Persist":true
+    },
+    "Response": {
+      "Status": 200,
+      "Body": "test foo 200 OK\n"
+    }
+  }
+,
+  {
+    "Request":{
+      "Host": "localhost",
+      "Method": "GET",
+      "URL": "/test$",
+      "Persist":true
+    },
+    "Response": {
+      "Status": 200,
+      "Body": "test local 200 OK\n",
+      "Delay": "3ms"
+    }
+  }
+]
